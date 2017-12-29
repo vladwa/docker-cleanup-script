@@ -1,6 +1,7 @@
 "# docker-cleanup-script"
 
 Docker Clean up script: 
+================================================================================
 
 1. Delete docker Images with "<none>" as a tag name.
 	Command : docker rmi -f $(docker images | grep -w "<none>" | awk {print $3})
